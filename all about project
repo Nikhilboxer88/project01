@@ -1,0 +1,31 @@
+User API with Express.js
+This project is a simple Express.js application that provides a RESTful API for managing a list of users. The data is served from a mock JSON file, MOCK_DATA.json, allowing basic CRUD (Create, Read, Update, Delete) operations. The server handles both HTML and JSON responses for users, enabling easy interaction through the browser or API clients.
+
+Key Features:
+GET /: Displays a welcome message.
+GET /users: Displays a list of user first names in HTML format.
+GET /api/users: Returns all users as a JSON response.
+GET /api/users/:id: Returns a specific user by ID in JSON format.
+POST /api/users: Adds a new user to the list.
+PATCH /api/users/:id: Updates a user's information by ID.
+DELETE /api/users/:id: Deletes a user by ID.
+DELETE /api/users: Removes the last user from the list.
+Technology Stack:
+Node.js and Express.js for the backend server.
+fs module for file system operations to read and write to MOCK_DATA.json.
+Installation:
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/repository-name.git
+Install dependencies:
+
+Copy code
+npm install
+Start the server:
+
+sql
+Copy code
+npm start
+Visit the app at http://localhost:9000.
